@@ -1,7 +1,7 @@
 import java.util.Scanner;       //é importado o SCANNER da biblioteca Java API (java.util)
 
 public class Main {
-    public static void main(String [] main) {
+    public static void main(String[] main) {
         Scanner scan = new Scanner(System.in);      // Aqui estou abrindo um novo scanner para que o usuário possa interagir com o sistema
 
         char repetir;       // Eu abri um CHAR fora do DO pois o WHILE não identificaria essa variavel no final
@@ -17,7 +17,7 @@ public class Main {
                 limite = scan.nextInt();
             }       // Esse é o fechamento do while, o usuário inseriu um valor maior que zero
             System.out.print("\n");     //quebra de linha
-            for (int cont = 1; cont <= limite ; cont++) {       //Aqui que começa, a variavel 'cont' recebe 1 inicialmente, enquanto o cont for menor que 'limite', ele irá receber 1, somando com o valor anterior até chegar no valor do limite, finalizando loop.
+            for (int cont = 1; cont <= limite; cont++) {       //Aqui que começa, a variavel 'cont' recebe 1 inicialmente, enquanto o cont for menor que 'limite', ele irá receber 1, somando com o valor anterior até chegar no valor do limite, finalizando loop.
                 if (cont % 2 != 0) {        //se a divisão de 'cont' com 2 restar um valor diferente de 0...
                     System.out.println(cont + " - Ímpar");      //Será impresso o valor de 'cont' com a escrita ' - impar', representando que o valor de 'cont' é ímpar
                 } else {        //Se não (caso o resto da divisão for igual a zero)...
