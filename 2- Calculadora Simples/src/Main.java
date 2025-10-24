@@ -32,7 +32,7 @@ public class Main {
                 if (scan.hasNextInt()) {
                     operacao = scan.nextInt();
                     if (operacao > 4 || operacao < 1) {
-                        System.out.println("\n    * O valor inserido é inválido, Você deve selecionar uma das quatro operações (1-4). *\n");
+                        System.out.println("\n    * O valor inserido é inválido, Você deve selecionar uma das quatro operações (1-4) *\n");
                     } else {
                         validacao = true;
                     }
