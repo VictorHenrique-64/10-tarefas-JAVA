@@ -71,8 +71,8 @@ public class Main {
                     break;
 
                 case 4:  // Divisão
-                    while (num2 <= 0) {
-                        System.out.println("\n* O segundo número deve ser maior que zero *\n");
+                    while (num2 == 0) {
+                        System.out.println("\n* O segundo número não pode ser igual a zero *\n");
                         while (!validacao) {
                             System.out.print("Digite o segundo número: ");
                             if (scan.hasNextInt()) {
@@ -87,7 +87,6 @@ public class Main {
                     System.out.println("\n" + num1 + " ÷ " + num2 + " = " + (num1 / num2));
                     break;
             }
-
             System.out.print("Gostaria de fazer um novo calculo? (s/n): ");
             repetir = scan.next().charAt(0);
             while (repetir != 's' && repetir != 'S' && repetir != 'n' && repetir != 'N') {
@@ -95,8 +94,6 @@ public class Main {
                 System.out.print("Gostaria de fazer um novo calculo? (s/n): ");
                 repetir = scan.next().charAt(0);
             }
-
-
         }
         while (repetir == 's' || repetir == 'S');
     }
